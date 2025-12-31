@@ -1,0 +1,34 @@
+*# --- Python ---
+__pycache__/
+*.py[cod]
+
+# --- Virtual environments ---
+.venv/
+venv/
+
+# --- IDEs ---
+.idea/
+*.iml
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- SQLite databases ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Backups ---
+*.backup.db
+
+# --- Generated files ---
+dir_structure.txt
+project_snapshot.txt
+
+# --- Logs ---
+*.log
+
+# --- Environment files ---
+.env
+.env.*
