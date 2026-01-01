@@ -3,10 +3,36 @@
 # ----------------------------
 import pandas as pd
 
+
+# table_name is trusted (internal schema), not user input
+"""     Update
+a
+row
+by
+primary
+key.
+
+Contract:
+- Table
+must
+have
+an
+integer
+column
+named
+'id'
+- No
+validation or schema
+checks
+are
+performed                                           
+"""
+
+
 # ----------------------------
 # Fetch rows
 # ----------------------------
-def fetch_active_rows(conn, table_name):
+def fetch_rows(conn, table_name):
     """Return all rows in the table"""
     return pd.read_sql(
         f"SELECT * FROM {table_name}",

@@ -1,34 +1,31 @@
-*# --- Python ---
+# --- Python ---
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
+*.pyd
 
 # --- Virtual environments ---
 .venv/
 venv/
+ENV/
 
-# --- IDEs ---
+# --- Databases ---
+*.db
+*.sqlite
+*.sqlite3
+*.backup.db
+
+# --- IDE ---
 .idea/
-*.iml
+.vscode/
 
 # --- OS ---
 .DS_Store
 Thumbs.db
 
-# --- SQLite databases ---
-*.db
-*.sqlite
-*.sqlite3
-
-# --- Backups ---
-*.backup.db
-
-# --- Generated files ---
-dir_structure.txt
+# --- Generated ---
 project_snapshot.txt
+dir_structure.txt
 
-# --- Logs ---
-*.log
-
-# --- Environment files ---
+# --- Secrets (future-proofing) ---
 .env
-.env.*
