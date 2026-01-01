@@ -1,0 +1,17 @@
+tasks:
+  fields:
+    id:
+      type: integer
+      pk: true
+      editable: false
+
+    title:
+      type: text
+      required: true
+
+    priority:
+      type: enum
+      values: [low, medium, high]
+
+    done:
+      type: boolean
